@@ -76,7 +76,7 @@ int main(void)
 
     // Send a simple http request
     size = strlen(query);
-    result = socket->send(query+result, size);
+    result = socket->send(query, size);
     if (result != size) {
         printf("Error! socket->send() returned: %d\n", result);
         goto DISCONNECT;
@@ -97,10 +97,11 @@ int main(void)
 
 DISCONNECT:
     delete[] buffer;
-    // Close the socket to return its memory and bring down the network interface
+    // Close the socket to return its memory
     socket->close();
+    delete socket;
 
-    // Bring down the ethernet interface
+    // Bring down the network interface
     net->disconnect();
     printf("Done\n");
 }
