@@ -76,7 +76,7 @@ int main(void)
 
     // Send a simple http request
     size = strlen(query);
-    result = socket->send(query+result, size);
+    result = socket->send(query, size);
     if (result != size) {
         printf("Error! socket->send() returned: %d\n", result);
         goto DISCONNECT;
