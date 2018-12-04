@@ -97,10 +97,11 @@ int main(void)
 
 DISCONNECT:
     delete[] buffer;
-    // Close the socket to return its memory and bring down the network interface
+    // Close the socket to return its memory
     socket->close();
+    delete socket;
 
-    // Bring down the ethernet interface
+    // Bring down the network interface
     net->disconnect();
     printf("Done\n");
 }
