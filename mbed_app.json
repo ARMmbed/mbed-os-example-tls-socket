@@ -1,5 +1,4 @@
 {
-    "macros": ["MBEDTLS_SHA1_C"],
     "target_overrides": {
         "*": {
             "platform.stdio-convert-newlines": true,

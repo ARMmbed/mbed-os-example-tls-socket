@@ -26,6 +26,21 @@ Building for WiFi boards, you need to provide SSID, password and security settin
 
 Building for boards that have more that one network interface, you might need to override `target.network-default-interface-type` variable.
 
+### Configuring mbedtls
+
+It might be necessary to configure the mbedtls library with appropriate macros in mbed_app.json file. Some boards (like UBLOX_EVK_ODIN_W2) will work fine without any additional configuration and some of them might require some minimal adjustment. For example K64F will require at least the following macro added:
+
+```
+{
+    "macros": ["MBEDTLS_SHA1_C"],
+    "target_overrides": {
+        ...
+    }
+}
+```
+
+See [mbedtls configuration guidelines](https://github.com/ARMmbed/mbed-os/tree/master/features/mbedtls#configuring-mbed-tls-features) for more details.
+
 ### Building
 
 ```
