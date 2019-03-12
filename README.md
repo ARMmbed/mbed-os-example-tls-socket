@@ -59,37 +59,39 @@ Mbed OS version: 5.11.4
 
 Connecting to network
 [DBG ][TLSW]: mbedtls_ssl_conf_ca_chain()
-Connecting to api.ipify.org
-[INFO][TLSW]: Starting TLS handshake with api.ipify.org
+Connecting to ifconfig.io
+[INFO][TLSW]: Starting TLS handshake with ifconfig.io
 [DBG ][TLSW]: mbedtls_ssl_setup()
-[INFO][TLSW]: TLS connection to api.ipify.org established
+[INFO][TLSW]: TLS connection to ifconfig.io established
 [DBG ][TLSW]: Server certificate:
     cert. version     : 3
-    serial number     : 92:0F:D1:B7:FE:4B:88:AE:B6:ED:5A:B0:C3:6C:56:68
-    issuer name       : C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO RSA Domain Validation Secure Server CA
-    subject name      : OU=Domain Control Validated, OU=PositiveSSL Wildcard, CN=*.ipify.org
-    issued  on        : 2018-01-24 00:00:00
-    expires on        : 2021-01-23 23:59:59
-    signed using      : RSA with SHA-256
-    RSA key size      : 2048 bits
+    serial number     : 3F:28:36:EC:98:F3:1D:A8:10:6F:96:47:3E:9C:8B:B2
+    issuer name       : C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server CA 2
+    subject name      : OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni44589.cloudflaressl.com
+    issued  on        : 2018-10-03 00:00:00
+    expires on        : 2019-04-11 23:59:59
+    signed using      : ECDSA with SHA256
+    EC key size       : 256 bits
     basic constraints : CA=false
-    subject alt name  : *.ipify.org, ipify.org
-    key usage         : Digital Signature, Key Encipherment
-    ext key usage     : TLS Web Server Authentication, TLS Web Client Authentication
-
-
+    subject alt name  : sni44589.cloudflaressl.com, *.8bit.tv, *.allseniorlivingrun.live, *.allseniorlivingsyes.live, *.andautoinsurancebuy.live, *.andglobaldentalimplantpurchesok.live, *.andseniorlivingkey.live, *.anokbestattungsversicherungok.live, *.anokunsoldsuvok.live, *.aptuklifeinsuranceok.live, *.authentic8.blog, *.beseniorparttimeshype.live, *.bewomencancertreatmentsok.live, *.bloodpressurehome.com, *.cancertreatm
 [INFO][TLSW]: Certificate verification passed
-[DBG ][TLSW]: send 58
+[DBG ][TLSW]: send 56
 HTTP/1.1 200 OK
-Server: Cowboy
+Date: Tue, 12 Mar 2019 14:50:04 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
 Connection: close
-Content-Type: text/plain
-Vary: Origin
-Date: Mon, 25 Feb 2019 13:13:10 GMT
-Content-Length: 11
-Via: 1.1 vegur
+Set-Cookie: __cfduid=d7c5c5e5d175b7367e562180bdca57c2d1552402204; expires=Wed, 11-Mar-20 14:50:04 GMT; path=/; domain=.ifconfig.io; HttpOnly
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 4b66940f3911cc9d-WAW
 
-85.76.45.48
+<html>
+... 
+ifconfig.io's HTML code
+...
+</html>
+
 [INFO][TLSW]: Closing TLS
 [DBG ][TLSW]: mbedtls_ssl_conf_ca_chain()
 Done
