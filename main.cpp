@@ -33,7 +33,7 @@ int main(void)
     char *buffer = new char[256];
     nsapi_size_or_error_t result;
     nsapi_size_t size;
-    const char query[] = "GET / HTTP/1.1\r\nHost: api.ipify.org\r\nConnection: close\r\n\r\n";
+    const char query[] = "GET / HTTP/1.1\r\nHost: ifconfig.io\r\nConnection: close\r\n\r\n";
 
     mbed_trace_init();
 
@@ -67,8 +67,8 @@ int main(void)
         return result;
     }
 
-    printf("Connecting to api.ipify.org\n");
-    result = socket->connect("api.ipify.org", 443);
+    printf("Connecting to ifconfig.io\n");
+    result = socket->connect("ifconfig.io", 443);
     if (result != 0) {
         printf("Error! socket->connect() returned: %d\n", result);
         goto DISCONNECT;
