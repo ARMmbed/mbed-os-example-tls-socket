@@ -106,3 +106,8 @@ For more information refer to following sections on the Mbed OS documentation:
 * [Secure Sockets](https://os.mbed.com/docs/mbed-os/latest/reference/secure-socket.html)
 * API Documentation: [TLSSocket](https://os.mbed.com/docs/mbed-os/latest/apis/tlssocket.html)
 
+### License and contributions
+
+The software is provided under Apache-2.0 license. Contributions to this project are accepted under the same license. Please see [contributing.md](CONTRIBUTING.md) for more info.
+
+This project contains code from other projects. The original license text is included in those source files. They must comply with our license guide.
