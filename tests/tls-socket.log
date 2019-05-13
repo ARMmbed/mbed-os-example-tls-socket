@@ -1,0 +1,39 @@
+TLSSocket Example.
+Mbed OS version:
+
+Connecting to network
+\[DBG \]\[TLSW\]: mbedtls_ssl_conf_ca_chain\(\)
+Connecting to ifconfig.io
+\[INFO\]\[TLSW\]: Starting TLS handshake with ifconfig.io
+\[DBG \]\[TLSW\]: mbedtls_ssl_setup\(\)
+\[INFO\]\[TLSW\]: TLS connection to ifconfig.io established
+\[DBG \]\[TLSW\]: Server certificate:
+    cert. version     : \d
+    serial number     : ([0-9A-F]{2}:)+[0-9A-F]{2}
+    issuer name       : C=GB, ST=Greater Manchester, L=Salford,
+    subject name      : OU=Domain Control Validated, OU=PositiveSSL
+    issued  on        : 
+    expires on        : 
+    signed using      : ECDSA with SHA256
+    EC key size       : 256 bits
+    basic constraints : CA=false
+    subject alt name  :
+\[INFO\]\[TLSW\]: Certificate verification passed
+\[DBG \]\[TLSW\]: send \d+
+HTTP\/\d.\d \d+ OK
+Date:
+Content-Type: text\/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie:
+Expect-CT: max-age=\d+, report-uri="https:\/\/report-uri.cloudflare.com
+Server: cloudflare
+CF-RAY:
+
+<html>
+
+<\/html>
+
+\[INFO\]\[TLSW\]: Closing TLS
+\[DBG \]\[TLSW\]: mbedtls_ssl_conf_ca_chain\(\)
+Done
