@@ -4,7 +4,7 @@ This examples application demonstrates the usage of `TLSSocket` API. To understa
 
 ### Selecting the network interface
 
-This application is able to use any network inteface it finds. Please see the Mbed OS documentationg for [selecting the default network interface](https://os.mbed.com/docs/latest/apis/network-interfaces.html).
+This application is able to use any network inteface it finds. Please see the Mbed OS documentation for [selecting the default network interface](https://os.mbed.com/docs/latest/apis/network-interfaces.html).
 
 For example, building on Ethernet enabled boards, you do not do any configuration.
 
