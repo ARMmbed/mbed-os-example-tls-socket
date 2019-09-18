@@ -1,6 +1,10 @@
 #include "mbed.h"
 #include "mbed_trace.h"
 
+#ifndef DEVICE_TRNG
+#error "mbed-os-example-tls-socket requires a device which supports TRNG"
+#else
+
 const char cert[] = \
     "-----BEGIN CERTIFICATE-----\n"
     "MIIENjCCAx6gAwIBAgIBATANBgkqhkiG9w0BAQUFADBvMQswCQYDVQQGEwJTRTEU\n"
@@ -105,3 +109,4 @@ DISCONNECT:
     net->disconnect();
     printf("Done\n");
 }
+#endif
