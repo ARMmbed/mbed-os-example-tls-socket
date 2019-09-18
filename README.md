@@ -1,6 +1,7 @@
 # TLSSocket example for Mbed OS
 
 This examples application demonstrates the usage of `TLSSocket` API. To understand how secure sockets work in Mbed OS, please refer to the [Documentation](#documentation) section below.
+**NOTE**: This example works only on devices having TRNG supported!
 
 ### Selecting the network interface
 
