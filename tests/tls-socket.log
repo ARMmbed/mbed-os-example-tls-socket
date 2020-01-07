@@ -11,7 +11,7 @@ Connecting to ifconfig.io
     cert. version     : \d
     serial number     : ([0-9A-F]{2}:)+[0-9A-F]{2}
     issuer name       : C=GB, ST=Greater Manchester, L=Salford,
-    subject name      : OU=Domain Control Validated, OU=PositiveSSL
+    subject name      : 
     issued  on        : 
     expires on        : 
     signed using      : ECDSA with SHA256
