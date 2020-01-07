@@ -53,27 +53,34 @@ int main(void)
 
     printf("Connecting to network\n");
     result = net->connect();
-    if (result != 0) {
+    if (result != NSAPI_ERROR_OK) {
         printf("Error! net->connect() returned: %d\n", result);
         return result;
     }
 
     TLSSocket *socket = new TLSSocket;
     result = socket->set_root_ca_cert(cert);
-    if (result != 0) {
+    if (result != NSAPI_ERROR_OK) {
         printf("Error: socket->set_root_ca_cert() returned %d\n", result);
         return result;
     }
 
     result = socket->open(net);
-    if (result != 0) {
+    if (result != NSAPI_ERROR_OK) {
         printf("Error! socket->open() returned: %d\n", result);
         return result;
     }
 
     printf("Connecting to ifconfig.io\n");
-    result = socket->connect("ifconfig.io", 443);
-    if (result != 0) {
+    SocketAddress addr;
+    result = net->gethostbyname("ifconfig.io", &addr);
+    if (result != NSAPI_ERROR_OK) {
+	printf("Error! DNS resolution for ifconfig.io failed with %d\n", result);
+    }
+    addr.set_port(443);
+
+    result = socket->connect(addr);
+    if (result != NSAPI_ERROR_OK) {
         printf("Error! socket->connect() returned: %d\n", result);
         goto DISCONNECT;
     }
