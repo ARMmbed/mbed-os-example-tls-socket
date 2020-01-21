@@ -58,19 +58,6 @@ int main(void)
         return result;
     }
 
-    TLSSocket *socket = new TLSSocket;
-    result = socket->set_root_ca_cert(cert);
-    if (result != NSAPI_ERROR_OK) {
-        printf("Error: socket->set_root_ca_cert() returned %d\n", result);
-        return result;
-    }
-
-    result = socket->open(net);
-    if (result != NSAPI_ERROR_OK) {
-        printf("Error! socket->open() returned: %d\n", result);
-        return result;
-    }
-
     printf("Connecting to ifconfig.io\n");
     SocketAddress addr;
     result = net->gethostbyname("ifconfig.io", &addr);
@@ -78,6 +65,19 @@ int main(void)
 	printf("Error! DNS resolution for ifconfig.io failed with %d\n", result);
     }
     addr.set_port(443);
+
+    TLSSocket *socket = new TLSSocket;
+    result = socket->open(net);
+    if (result != NSAPI_ERROR_OK) {
+        printf("Error! socket->open() returned: %d\n", result);
+        return result;
+    }
+
+    result = socket->set_root_ca_cert(cert);
+    if (result != NSAPI_ERROR_OK) {
+        printf("Error: socket->set_root_ca_cert() returned %d\n", result);
+        return result;
+    }
 
     result = socket->connect(addr);
     if (result != NSAPI_ERROR_OK) {
