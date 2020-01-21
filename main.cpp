@@ -73,6 +73,8 @@ int main(void)
         return result;
     }
 
+    socket->set_hostname("ifconfig.io");
+
     result = socket->set_root_ca_cert(cert);
     if (result != NSAPI_ERROR_OK) {
         printf("Error: socket->set_root_ca_cert() returned %d\n", result);
