@@ -2,22 +2,22 @@ TLSSocket Example.
 Mbed OS version:
 
 Connecting to network
-\[DBG \]\[TLSW\]: mbedtls_ssl_conf_ca_chain\(\)
 Connecting to ifconfig.io
+\[DBG \]\[TLSW\]: mbedtls_ssl_conf_ca_chain\(\)
 \[INFO\]\[TLSW\]: Starting TLS handshake with ifconfig.io
 \[DBG \]\[TLSW\]: mbedtls_ssl_setup\(\)
 \[INFO\]\[TLSW\]: TLS connection to ifconfig.io established
 \[DBG \]\[TLSW\]: Server certificate:
-    cert. version     : \d
-    serial number     : ([0-9A-F]{2}:)+[0-9A-F]{2}
-    issuer name       : C=GB, ST=Greater Manchester, L=Salford,
-    subject name      : 
-    issued  on        : 
-    expires on        : 
-    signed using      : ECDSA with SHA256
-    EC key size       : 256 bits
-    basic constraints : CA=false
-    subject alt name  :
+cert. version\s*: \d
+serial number\s*: ([0-9A-F]{2}:)+[0-9A-F]{2}
+issuer name\s*: C=GB, ST=Greater Manchester, L=Salford,
+subject name\s*: 
+issued  on\s*: 
+expires on\s*: 
+signed using\s*: ECDSA with SHA256
+EC key size\s*: 256 bits
+basic constraints\s*: CA=false
+subject alt name\s*:
 \[INFO\]\[TLSW\]: Certificate verification passed
 \[DBG \]\[TLSW\]: send \d+
 HTTP\/\d.\d \d+ OK
