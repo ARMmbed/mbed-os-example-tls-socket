@@ -10,10 +10,10 @@ Connecting to ifconfig.io
 \[DBG \]\[TLSW\]: Server certificate:
 cert. version\s*: \d
 serial number\s*: ([0-9A-F]{2}:)+[0-9A-F]{2}
-issuer name\s*: C=GB, ST=Greater Manchester, L=Salford,
-subject name\s*: 
-issued  on\s*: 
-expires on\s*: 
+issuer name\s*: C=US, ST=CA, L=San Francisco,
+subject name\s*:
+issued  on\s*:
+expires on\s*:
 signed using\s*: ECDSA with SHA256
 EC key size\s*: 256 bits
 basic constraints\s*: CA=false
