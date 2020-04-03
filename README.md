@@ -59,36 +59,46 @@ TLSSocket Example.
 Mbed OS version: 5.11.4
 
 Connecting to network
-[DBG ][TLSW]: mbedtls_ssl_conf_ca_chain()
 Connecting to ifconfig.io
+[DBG ][TLSW]: mbedtls_ssl_conf_ca_chain()
 [INFO][TLSW]: Starting TLS handshake with ifconfig.io
 [DBG ][TLSW]: mbedtls_ssl_setup()
 [INFO][TLSW]: TLS connection to ifconfig.io established
 [DBG ][TLSW]: Server certificate:
     cert. version     : 3
-    serial number     : 3F:28:36:EC:98:F3:1D:A8:10:6F:96:47:3E:9C:8B:B2
-    issuer name       : C=GB, ST=Greater Manchester, L=Salford, O=COMODO CA Limited, CN=COMODO ECC Domain Validation Secure Server CA 2
-    subject name      : OU=Domain Control Validated, OU=PositiveSSL Multi-Domain, CN=sni44589.cloudflaressl.com
-    issued  on        : 2018-10-03 00:00:00
-    expires on        : 2019-04-11 23:59:59
+    serial number     : 0C:41:8C:DF:D9:3E:0D:A0:FC:7F:46:90:C1:64:A0:F2
+    issuer name       : C=US, ST=CA, L=San Francisco, O=CloudFlare, Inc., CN=CloudFlare Inc ECC CA-2
+    subject name      : C=US, ST=CA, L=San Francisco, O=Cloudflare, Inc., CN=sni.cloudflaressl.com
+    issued  on        : 2020-01-30 00:00:00
+    expires on        : 2020-10-09 12:00:00
     signed using      : ECDSA with SHA256
     EC key size       : 256 bits
     basic constraints : CA=false
-    subject alt name  : sni44589.cloudflaressl.com, *.8bit.tv, *.allseniorlivingrun.live, *.allseniorlivingsyes.live, *.andautoinsurancebuy.live, *.andglobaldentalimplantpurchesok.live, *.andseniorlivingkey.live, *.anokbestattungsversicherungok.live, *.anokunsoldsuvok.live, *.aptuklifeinsuranceok.live, *.authentic8.blog, *.beseniorparttimeshype.live, *.bewomencancertreatmentsok.live, *.bloodpressurehome.com, *.cancertreatm
+    subject alt name  :
+        dNSName : sni.cloudflaressl.com
+        dNSName : *.ifconfig.io
+        dNSName : ifconfig.io
+    key usage         : Digital Signature
+    ext key usage     : TLS Web Server Authentication, TLS Web Client Authentication
+    certificate policies : ???, ???
+
+
 [INFO][TLSW]: Certificate verification passed
 [DBG ][TLSW]: send 56
 HTTP/1.1 200 OK
-Date: Tue, 12 Mar 2019 14:50:04 GMT
+Date: Wed, 19 Feb 2020 11:06:02 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: close
-Set-Cookie: __cfduid=d7c5c5e5d175b7367e562180bdca57c2d1552402204; expires=Wed, 11-Mar-20 14:50:04 GMT; path=/; domain=.ifconfig.io; HttpOnly
+Set-Cookie: __cfduid=da3c9233e724ec7c8b091ceac83d117c91582110361; expires=Fri, 20-Mar-20 11:06:01 GMT; path=/; domain=.ifconfig.io; HttpOnly; SameSite=Lax
+CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Alt-Svc: h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443"; ma=86400
 Server: cloudflare
-CF-RAY: 4b66940f3911cc9d-WAW
+CF-RAY: 5677c4e25b74fe34-HEL
 
 <html>
-... 
+...
 ifconfig.io's HTML code
 ...
 </html>
