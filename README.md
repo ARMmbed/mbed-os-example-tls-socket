@@ -1,3 +1,4 @@
+![](./resources/official_armmbed_example_badge.png)
 # TLSSocket example for Mbed OS
 
 This examples application demonstrates the usage of `TLSSocket` API. To understand how secure sockets work in Mbed OS, please refer to the [Documentation](#documentation) section below.
