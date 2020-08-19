@@ -10,7 +10,7 @@ Connecting to ifconfig.io
 \[DBG \]\[TLSW\]: Server certificate:
 cert. version\s*: \d
 serial number\s*:
-issuer name\s*: C=US, ST=CA, L=San Francisco,
+issuer name\s*:
 subject name\s*:
 issued  on\s*:
 expires on\s*:
