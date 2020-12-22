@@ -1,4 +1,10 @@
-![](./resources/official_armmbed_example_badge.png)
+# This example is DEPRECATED
+
+### Please use [sockets example](https://github.com/ARMmbed/mbed-os-example-sockets) instead.
+
+---
+
+
 # TLSSocket example for Mbed OS
 
 This examples application demonstrates the usage of `TLSSocket` API. To understand how secure sockets work in Mbed OS, please refer to the [Documentation](#documentation) section below.
