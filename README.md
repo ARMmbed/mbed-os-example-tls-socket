@@ -1,6 +1,7 @@
-# This example is DEPRECATED
+![](./resources/warning.png)
+## This example has been deprecated
 
-### Please use [sockets example](https://github.com/ARMmbed/mbed-os-example-sockets) instead.
+Please use [sockets example](https://github.com/ARMmbed/mbed-os-example-sockets) instead.
 
 ---
 
